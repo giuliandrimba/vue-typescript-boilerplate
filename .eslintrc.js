@@ -10,9 +10,12 @@ module.exports = {
   ],
   rules: {
     'no-console': process.env.NODE_ENV === 'production' ? 'error' : 'off',
-    'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off'
+    'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off',
+    'space-infix-ops': 'off',
+    "indent": 0,
   },
   parserOptions: {
-    parser: 'typescript-eslint-parser'
+    parser: 'typescript-eslint-parser',
+    "sourceType": "module"
   }
 }
